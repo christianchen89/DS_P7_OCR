@@ -1,0 +1,4 @@
+data/
+mlartifacts/
+mlruns/
+.pytest_cache/
