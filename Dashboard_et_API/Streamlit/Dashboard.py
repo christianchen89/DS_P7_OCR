@@ -103,7 +103,7 @@ with st.sidebar:
     score_client = 100 - int(re.get(API_GET).json() * 100)
 
     # Check if the client is eligible for a loan based on the score
-    if score_client < 100 - 10.344827586206896:
+    if score_client < 100 - 17.24137931034483:
         st.error("Loan Denied")
     else:
         st.success("Loan Approved")
@@ -155,7 +155,7 @@ if client_pred_checkbox:
     if 95 <= score_client < 100:
         score_text = 'PERFECT LOAN APPLICATION'
         st.success(score_text)
-    elif 100 - 10.344827586206896 <= score_client < 95:
+    elif 100 - 17.24137931034483 <= score_client < 95:
         score_text = 'GOOD LOAN APPLICATION'
         st.success(score_text)
     elif 70 <= score_client < 100 - 17.24137931034483:
