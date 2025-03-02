@@ -158,7 +158,7 @@ if client_pred_checkbox:
     elif 100 - 10.344827586206896 <= score_client < 95:
         score_text = 'GOOD LOAN APPLICATION'
         st.success(score_text)
-    elif 70 <= score_client < 100 - 10.344827586206896:
+    elif 70 <= score_client < 100 - 17.24137931034483:
         score_text = 'REVIEW REQUIRED'
         st.warning(score_text)
     else:
@@ -182,7 +182,7 @@ if client_pred_checkbox:
         shap_values = ast.literal_eval(shap_values['shap_client'])
         shap_values = np.array(shap_values).astype('float32')
         waterfall = shap.plots._waterfall.waterfall_legacy(shap_values=shap_values,
-                                                           expected_value = -2.9159221699244515,
+                                                           expected_value = -2.58698782,
                                                            feature_names=column_names,
                                                            max_display=20)
         st.pyplot(waterfall)
