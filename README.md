@@ -31,6 +31,8 @@ Le déploiement de l'application dashboard et de l’API seront réalisées sur 
 
 D’autre part Michaël attend que vous mettiez en oeuvre une démarche d’élaboration des modèles avec Cross-Validation, via GridsearchCV ou équivalent.
 
+AWS : http://18.170.30.240:8501/ 
+
 Il vous donne un dernier conseil : si vous obtenez des scores supérieurs au 1er du challenge Kaggle (AUC > 0.82), posez-vous la question si vous n’avez pas de l’overfitting dans votre modèle.
 
 Michaël attend également de votre part une note technique, présentant toute votre démarche d’élaboration du modèle jusqu’à l’analyse du Data Drift, afin de partager vos réalisations avec vos collègues.
